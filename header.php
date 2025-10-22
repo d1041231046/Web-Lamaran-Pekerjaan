@@ -5,7 +5,7 @@
     <body>
         <!-- Bagian Logo -->
         <div class="logo">
-            <img src="">
+            <img src="Logo.png" style="width:150px">
         </div>
 
         <!-- Navigation Bar -->
