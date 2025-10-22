@@ -18,6 +18,9 @@
             <!-- Button Sign-in -->
             <input type="submit" value="Sign-in">
             <br>
+
+            <!-- Register account -->
+            <p>doesn't have an account? <a href="register.php">click here to sign up</a></p>
         </form>
     </body>
 </html>
