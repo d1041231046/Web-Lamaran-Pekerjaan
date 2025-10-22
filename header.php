@@ -10,8 +10,10 @@
 
         <!-- Navigation Bar -->
         <div class="menu">
-            <a href="beranda.php">BERANDA</a>
-            <a href="lowongan.php">CARI LOWONGAN</a>
+            <a href="beranda.php" target="main">BERANDA</a>
+            <a href="lowongan.php" target="main">LOWONGAN</a>
+            <a href="lamaran.php" target="main">LAMARAN SAYA</a>
+            <a href="profil.php" target="main">PROFIL SAYA</a>
         </div>
     </body>
 </html>
