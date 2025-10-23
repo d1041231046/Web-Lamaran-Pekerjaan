@@ -4,16 +4,16 @@
     </head>
     <body>
         <!-- Bagian Logo -->
-        <div class="logo">
-            <img src="Logo.png" style="width:150px">
+        <div class="logo" onclick="window.open('beranda.php', 'main')">
+            <img src="Logo.png">
         </div>
 
         <!-- Navigation Bar -->
         <div class="menu">
-            <a href="beranda.php" target="main">BERANDA</a>
-            <a href="lowongan.php" target="main">LOWONGAN</a>
-            <a href="lamaran.php" target="main">LAMARAN SAYA</a>
-            <a href="profil.php" target="main">PROFIL SAYA</a>
+            <div onclick="window.open('beranda.php', 'main')">BERANDA</div>
+            <div onclick="window.open('lowongan.php', 'main')">LOWONGAN</div>
+            <div onclick="window.open('lamaran.php', 'main')">LAMARAN SAYA</div>
+            <div onclick="window.open('profil.php', 'main')">PROFIL SAYA</div>
         </div>
     </body>
 </html>
