@@ -4,7 +4,7 @@
     </head>
     <body>
         <h2>Buat Akun Baru</h2>
-        <form method="post">
+        <form method="post" action="frame.php">
             <!-- Tempat input Username -->
             <label for="username">Username</label>
             <input type="text" id="username" name="username" placeholder="Username">

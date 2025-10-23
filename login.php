@@ -4,7 +4,7 @@
     </head>
     <body>
         <h2>Login LAPER</h2>
-        <form method="post">
+        <form method="post" action="frame.php">
             <!-- Tempat input Email -->
             <label for="email">Email</label>
             <input type="Email" id="email" name="email" placeholder="Email">
