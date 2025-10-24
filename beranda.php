@@ -23,8 +23,8 @@
             <!-- Tentang Website -->
             <div class="tentang">
                 <h2>
-                    LAPER adalah platform sederhana yang membantu pencari kerja menemukan peluang pekerjaan dari berbagai perusahaan. 
-                    Website ini juga memudahkan perusahaan untuk menerima dan memproses lamaran secara online.
+                    Semua proses lamaran dalam satu tempat.
+                    <br>Cari lowongan, kirim CV, dan pantau status lamaran dengan mudah.
                 </h2>
             </div>
 
