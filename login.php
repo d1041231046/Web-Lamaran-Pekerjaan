@@ -1,10 +1,40 @@
+<?php
+session_start();
+include 'koneksi.php';
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $email = $_POST['email'];
+    $password = $_POST['password'];
+
+    $query = "SELECT * FROM user WHERE Email = '$email'";
+    $result = mysqli_query($conn, $query);
+
+    if ($result && mysqli_num_rows($result) > 0) {
+        $user = mysqli_fetch_assoc($result);
+
+        if ($password === $user['Password']) {
+            $_SESSION['Id_User'] = $user['Id_User'];
+            $_SESSION['Username'] = $user['Username'];
+            $_SESSION['Email'] = $user['Email'];
+            
+            header("Location: beranda.php");
+            exit();
+        } else {
+            $error = "Password salah.";
+        }
+    } else {
+        $error = "Email tidak ditemukan.";
+    }
+}
+?>
+
 <html>
     <head>
         <title>LAPER - Login</title>
     </head>
     <body>
         <h2>Login LAPER</h2>
-        <form method="post" action="frame.php">
+        <form method="post" action="login_proses.php">
             <!-- Tempat input Email -->
             <label for="email">Email</label>
             <input type="Email" id="email" name="email" placeholder="Email">
