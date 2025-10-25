@@ -5,7 +5,7 @@ body {
     min-height: 100vh;
 }
 
-main {
+.beranda {
     flex: 1;
 }
 
@@ -17,6 +17,7 @@ main {
     min-height: 90vh;
     box-sizing: border-box;
     background-color: yellow;
+    margin-top: 70px;
 }
 
 .utama-text {
@@ -25,13 +26,16 @@ main {
 
 .utama-text > h1 {
     font-size: 64px;
+    font-family: serif;
     color: #2e4d2c;
-    margin-bottom: 10px;
+    margin-bottom: 50px;
 }
 
 .utama-text > button {
     padding: 14px 30px;
+    border-radius: 8px;
     background-color: #4CAF50;
+    border: 0;
     color: white;
 }
 
@@ -50,4 +54,22 @@ main {
     align-items: center;
     background-color: black;
     color: white;
+    font-family: sans-serif;
+}
+
+.testimoni-container {
+    margin: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.testimoni-isi {
+    display: flex;
+    margin: 10px;
+    width: 250px;
+    height: 200px;
+    text-align: center;
+    border-radius: 20px;
+    background-color: lightgray;
 }
