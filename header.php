@@ -6,9 +6,9 @@
 
     <!-- Navigation Bar -->
     <div class="menu">
-        <div onclick="window.location.href='beranda.php'">BERANDA</div>
-        <div onclick="window.location.href='lowongan.php'">LOWONGAN</div>
-        <div onclick="window.location.href='lamaran.php'">LAMARAN SAYA</div>
-        <div onclick="window.location.href='profil.php'">PROFIL SAYA</div>
+        <div onclick="window.location.href='beranda.php'"><p>BERANDA</p></div>
+        <div onclick="window.location.href='lowongan.php'"><p>LOWONGAN</p></div>
+        <div onclick="window.location.href='lamaran.php'"><p>LAMARAN SAYA</p></div>
+        <div onclick="window.location.href='profil.php'"><p>PROFIL SAYA</p></div>
     </div>
 </div>
