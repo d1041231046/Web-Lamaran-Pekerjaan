@@ -15,7 +15,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if ($result->num_rows > 0) {
         $user = $result->fetch_assoc();
 
-        if ($user['Password'] === $password) {
+        if (password_verify($password, $user['Password'])) {
             $_SESSION['user'] = $user;
             header("Location: beranda.php");
             exit;

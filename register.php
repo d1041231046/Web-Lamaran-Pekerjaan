@@ -16,7 +16,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         if (mysqli_num_rows($cekEmail) > 0) {
             $error = "Email sudah terdaftar. Silakan gunakan email lain.";
         } else {
-            $query = "INSERT INTO user (Username, Email, Password) VALUES ('$username', '$email', '$password')";
+            $hashed_password = password_hash($password, PASSWORD_DEFAULT);
+            $query = "INSERT INTO user (Username, Email, Password) VALUES ('$username', '$email', '$hashed_password')";
             $result = mysqli_query($conn, $query);
 
             if ($result) {
