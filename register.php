@@ -36,34 +36,42 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 <html>
     <head>
+        <link rel="icon" href="Logo.png">
         <title>LAPER - Registrasi</title>
+        <link rel="stylesheet" href="register.css">
     </head>
     <body>
-        <h2>Buat Akun Baru</h2>
-        <form method="post" action="register.php">
-            <!-- Tempat input Username -->
-            <label for="username">Username</label>
-            <input type="text" id="username" name="username" placeholder="Username">
-            <br>
+        <div class="logo">
+            <img src="Logo.png">
+        </div>
+        <div class="register">
+            <h2>Buat Akun Baru</h2>
+            <form method="post" action="register.php">
+                <!-- Tempat input Username -->
+                <label class="label" for="username"><strong>Username</strong></label>
+                <input type="text" id="username" name="username" placeholder="Username">
+                <br>
 
-            <!-- Tempat input Email -->
-            <label for="email">Email</label>
-            <input type="Email" id="email" name="email" placeholder="Email">
-            <br>
+                <!-- Tempat input Email -->
+                <label class="label" for="email"><strong>Email</strong></label>
+                <input type="Email" id="email" name="email" placeholder="Email">
+                <br>
 
-            <!-- Tempat input Password -->
-            <label for="password">Password</label>
-            <input type="Password" id="password" name="password" placeholder="Password">
-            <br>
+                <!-- Tempat input Password -->
+                <label class="label" for="password"><strong>Password</strong></label>
+                <input type="Password" id="password" name="password" placeholder="Password">
+                <br>
 
-            <!-- Tempat validasi Password -->
-            <label for="password2">Konfirmasi Password</label>
-            <input type="Password" id="password2" name="password2" placeholder="Ulangi Password">
-            <br>
-            
-            <!-- Button Sign-up -->
-            <input type="submit" value="Sign-up">
-            <br>
-        </form>
+                <!-- Tempat validasi Password -->
+                <label class="label" for="password2"><strong>Konfirmasi Password</strong></label>
+                <input type="Password" id="password2" name="password2" placeholder="Ulangi Password">
+                <br>
+                <br>
+                
+                <!-- Button Sign-up -->
+                <input class="button" type="submit" value="Sign-up">
+                <br>
+            </form>
+        </div>
     </body>
 </html>
