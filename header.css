@@ -6,7 +6,7 @@
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     position: fixed;
     z-index: 1000;
-    background-color: white;
+    background-color: #FAFAF5;
     width: 100%;
 }
 
@@ -34,7 +34,7 @@
     font-family: sans-serif;
 }
 
-.menu div:hover {
-  background-color: #ddd;
+.menu > div:hover {
+  color: #3DB841;
   cursor: pointer;
 }
