@@ -21,7 +21,7 @@ if (!isset($_SESSION['user'])) {
             <div class="utama">
                 <div class="utama-text">
                     <h1>&quot;LAPER &minus; Satu Langkah Menuju Pekerjaan Impian.&quot;</h1>
-                    <button>Lihat Lowongan</button>
+                    <button onclick="window.location.href='lowongan.php'">Lihat Lowongan</button>
                 </div>
                 
                 <div class="utama-img">
