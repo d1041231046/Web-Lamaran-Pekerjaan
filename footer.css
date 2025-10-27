@@ -1,5 +1,7 @@
 .footer-container {
     text-align: center;
-    background-color: lightblue;
+    font-family: sans-serif;
+    color: white;
+    background-color: #1B331C;
     padding: 10px;
 }
