@@ -43,12 +43,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <form method="post" action="login_proses.php">
                 <!-- Tempat input Email -->
                 <label class="label" for="email"><strong>Email</strong></label>
-                <input type="Email" id="email" name="email" placeholder="Email">
+                <input type="Email" id="email" name="email" placeholder="Email" required>
                 <br>
 
                 <!-- Tempat input Password -->
                 <label class="label" for="password"><strong>Password</strong></label>
-                <input type="Password" id="password" name="password" placeholder="Password">
+                <input type="Password" id="password" name="password" placeholder="Password" required>
                 <br>
                 <br>
                 

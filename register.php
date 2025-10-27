@@ -49,22 +49,22 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <form method="post" action="register.php">
                 <!-- Tempat input Username -->
                 <label class="label" for="username"><strong>Username</strong></label>
-                <input type="text" id="username" name="username" placeholder="Username">
+                <input type="text" id="username" name="username" placeholder="Username" required>
                 <br>
 
                 <!-- Tempat input Email -->
                 <label class="label" for="email"><strong>Email</strong></label>
-                <input type="Email" id="email" name="email" placeholder="Email">
+                <input type="Email" id="email" name="email" placeholder="Email" required>
                 <br>
 
                 <!-- Tempat input Password -->
                 <label class="label" for="password"><strong>Password</strong></label>
-                <input type="Password" id="password" name="password" placeholder="Password">
+                <input type="Password" id="password" name="password" placeholder="Password" required>
                 <br>
 
                 <!-- Tempat validasi Password -->
                 <label class="label" for="password2"><strong>Konfirmasi Password</strong></label>
-                <input type="Password" id="password2" name="password2" placeholder="Ulangi Password">
+                <input type="Password" id="password2" name="password2" placeholder="Ulangi Password" required>
                 <br>
                 <br>
                 
