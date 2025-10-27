@@ -1,33 +1,3 @@
-<?php
-session_start();
-include 'koneksi.php';
-
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $email = $_POST['email'];
-    $password = $_POST['password'];
-
-    $query = "SELECT * FROM user WHERE Email = '$email'";
-    $result = mysqli_query($conn, $query);
-
-    if ($result && mysqli_num_rows($result) > 0) {
-        $user = mysqli_fetch_assoc($result);
-
-        if ($password === $user['Password']) {
-            $_SESSION['Id_User'] = $user['Id_User'];
-            $_SESSION['Username'] = $user['Username'];
-            $_SESSION['Email'] = $user['Email'];
-            
-            header("Location: beranda.php");
-            exit();
-        } else {
-            $error = "Password salah.";
-        }
-    } else {
-        $error = "Email tidak ditemukan.";
-    }
-}
-?>
-
 <html>
     <head>
         <link rel="icon" href="Logo.png">
