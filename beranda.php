@@ -25,7 +25,7 @@ if (!isset($_SESSION['user'])) {
                 </div>
                 
                 <div class="utama-img">
-                    <img src="Chisa_Card.jpg">
+                    <img src="utama.jpg">
                 </div>
             </div>
 
@@ -40,24 +40,30 @@ if (!isset($_SESSION['user'])) {
             <!-- Testimoni -->
             <div class="testimoni-container">
                 <div class="testimoni-isi">
-                <p>
-                    &quot;Dengan LAPER, saya bisa menemukan pekerjaan pertama saya dengan mudah!&quot;<br>
-                    &minus; Rina, Web Developer
-                </p>
+                    <img src="Rina.jpg" alt="Foto Rina">
+                    <div class="testimoni-text">
+                        <p>"Dengan LAPER, saya bisa menemukan pekerjaan pertama saya dengan mudah!"</p>
+                        <h4>Rina</h4>
+                        <span>Web Developer</span>
+                    </div>
                 </div>
+
                 <div class="testimoni-isi">
-                <p>
-                    &quot;LAPER membantu saya menemukan pekerjaan yang sesuai dengan jurusan saya.
-                    Proses lamaran sangat mudah dan cepat.&quot;
-                    &minus; Rizky A., Fresh Graduate Teknik Informatika
-                </p>
+                    <img src="Rizky.jpg" alt="Foto Rizky">
+                    <div class="testimoni-text">
+                        <p>"LAPER membantu saya menemukan pekerjaan yang sesuai dengan jurusan saya."</p>
+                        <h4>Rizky A.</h4>
+                        <span>Fresh Graduate Teknik Informatika</span>
+                    </div>
                 </div>
+
                 <div class="testimoni-isi">
-                <p>
-                    &quot;Saya tidak menyangka bisa diterima kerja hanya seminggu setelah melamar lewat LAPER.
-                    Web-nya sangat informatif dan mudah digunakan.&quot;
-                    &minus; Maya P., Staff Administrasi
-                </p>
+                    <img src="Maya.png" alt="Foto Maya">
+                    <div class="testimoni-text">
+                        <p>"Saya diterima kerja hanya seminggu setelah melamar lewat LAPER."</p>
+                        <h4>Maya P.</h4>
+                        <span>Staff Administrasi</span>
+                    </div>
                 </div>
             </div>
         </main>
