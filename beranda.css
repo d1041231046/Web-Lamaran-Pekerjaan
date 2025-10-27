@@ -16,7 +16,7 @@ body {
     padding: 60px 80px;
     min-height: 90vh;
     box-sizing: border-box;
-    background-color: yellow;
+    background: linear-gradient(135deg, #FAFAF5 0%, #C5E1A5 100%);
     margin-top: 70px;
 }
 
@@ -34,9 +34,14 @@ body {
 .utama-text > button {
     padding: 14px 30px;
     border-radius: 8px;
-    background-color: #4CAF50;
+    background-color: #2E7D32;
     border: 0;
     color: white;
+}
+
+.utama-text > button:hover {
+    background-color: #388E3C;
+    cursor: pointer;
 }
 
 .utama-img > img {
@@ -47,29 +52,69 @@ body {
 }
 
 .tentang {
-    min-height: 30vh;
+    min-height: 45vh;
     display: flex;
     justify-content: center;
     text-align: center;
     align-items: center;
-    background-color: black;
-    color: white;
+    background-color: #E8F5E9;
     font-family: sans-serif;
 }
 
 .testimoni-container {
-    margin: 20px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    gap: 40px;
+    padding: 60px 40px;
+    background: #F8FFF8;
 }
 
 .testimoni-isi {
+    background: #E8F5E9;
+    border-radius: 16px;
+    width: 300px;
+    padding: 25px 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     display: flex;
-    margin: 10px;
-    width: 250px;
-    height: 200px;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
-    border-radius: 20px;
-    background-color: lightgray;
+    transition: 0.3s;
+}
+
+.testimoni-isi:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+}
+
+.testimoni-isi > img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 3px solid #A8E6A3;
+}
+
+.testimoni-text > p {
+    font-size: 15px;
+    font-family: sans-serif;
+    color: #2E4D2C;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.testimoni-text > h4 {
+    margin: 0;
+    font-size: 16px;
+    font-family: sans-serif;
+    color: #1B331C;
+    font-weight: bold;
+}
+
+.testimoni-text > span {
+    font-size: 13px;
+    font-family: sans-serif;
+    color: #4B6850;
 }
