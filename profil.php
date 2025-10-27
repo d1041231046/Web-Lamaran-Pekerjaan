@@ -19,7 +19,7 @@ $Id_User = $user['Id_User'];
         <link rel="stylesheet" href="footer.css">
     </head>
     <body>
-        <?php include 'header.php'; ?>
+        <?php include 'header.html'; ?>
         <main class="profil">
             <div class="profil-container">
                 <h1>Profil Saya</h1>
@@ -36,6 +36,6 @@ $Id_User = $user['Id_User'];
                 </div>
             </div>
         </main>
-        <?php include 'footer.php'; ?>
+        <?php include 'footer.html'; ?>
     </body>
 </html>

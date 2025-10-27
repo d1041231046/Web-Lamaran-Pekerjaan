@@ -3,7 +3,7 @@ session_start();
 include 'koneksi.php';
 
 if (!isset($_SESSION['user'])) {
-    header("Location: login.php");
+    header("Location: login.html");
     exit();
 }
 
@@ -32,7 +32,7 @@ $result = mysqli_query($conn, $query);
         <link rel="stylesheet" href="footer.css">
     </head>
     <body>
-        <?php include 'header.php'; ?>
+        <?php include 'header.html'; ?>
         <main class="lamaran">
             <h1>Lamaran Saya</h1>
             <div class="lamaran-container">
@@ -56,6 +56,6 @@ $result = mysqli_query($conn, $query);
                 <?php endif; ?>
             </div>
         </main>
-        <?php include 'footer.php'; ?>
+        <?php include 'footer.html'; ?>
     </body>
 </html>

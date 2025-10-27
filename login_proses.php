@@ -20,14 +20,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             header("Location: beranda.php");
             exit;
         } else {
-            header("Location: login.php?error=Password+Salah");
+            header("Location: login.html?error=Password+Salah");
             exit;
         }
     } else {
-        header("Location: login.php?error=Email+Tidak+Ditemukan");
+        header("Location: login.html?error=Email+Tidak+Ditemukan");
         exit;
     }
 } else {
-    header("Location: login.php?error=entah");
+    header("Location: login.html?error=entah");
     exit;
 }

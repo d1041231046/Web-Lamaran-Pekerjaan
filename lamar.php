@@ -3,7 +3,7 @@ session_start();
 include 'koneksi.php';
 
 if (!isset($_SESSION['user'])) {
-    header("Location: login.php");
+    header("Location: login.html");
     exit;
 }
 
@@ -38,7 +38,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     move_uploaded_file($_FILES['foto']['tmp_name'], $foto_path);
 
     $query = "INSERT INTO lowongan_user 
-        (Id_User, Id_Lowongan_Pekerjaan, Nama_Lengkap, Tanggal_Lahir, Jenis_Kelamin, Alamat, No_Telp, Email, `Pendidikan Terakhir`, `Pengalaman Kerja`, CV, Foto, Status_Lamaran)
+        (Id_User, Id_Lowongan_Pekerjaan, Nama_Lengkap, Tanggal_Lahir, Jenis_Kelamin, Alamat, No_Telp, Email, `Pendidikan_Terakhir`, `Pengalaman_Kerja`, CV, Foto, Status_Lamaran)
         VALUES ('$Id_User', '$Id_Lowongan', '$nama', '$tgl_lahir', '$jk', '$alamat', '$no_telp', '$email', '$pendidikan', '$pengalaman', '$cv_path', '$foto_path', '$status')";
     
     if (mysqli_query($conn, $query)) {
@@ -59,7 +59,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         <link rel="stylesheet" href="footer.css">
     </head>
     <body>
-        <?php include 'header.php'; ?>
+        <?php include 'header.html'; ?>
         <main class="lamar">
             <div class="form-container">
                 <h2>Lamar Pekerjaan</h2>
@@ -102,6 +102,6 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
                 </form>
             </div>
         </main>
-        <?php include 'footer.php'; ?>
+        <?php include 'footer.html'; ?>
     </body>
 </html>

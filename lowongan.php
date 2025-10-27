@@ -3,7 +3,7 @@ session_start();
 include 'koneksi.php';
 
 if (!isset($_SESSION['user'])) {
-    header("Location: login.php");
+    header("Location: login.html");
     exit();
 }
 
@@ -24,7 +24,7 @@ if (!$result) {
     <link rel="stylesheet" href="footer.css">
 </head>
 <body>
-    <?php include 'header.php'; ?>
+    <?php include 'header.html'; ?>
     <main class="lowongan">
         <h1>Daftar Lowongan Pekerjaan</h1>
 
@@ -74,7 +74,7 @@ if (!$result) {
             <?php endif; ?>
         </div>
     </main>
-    <?php include 'footer.php'; ?>
+    <?php include 'footer.html'; ?>
     <script src="lowongan.js" defer></script>
 </body>
 </html>

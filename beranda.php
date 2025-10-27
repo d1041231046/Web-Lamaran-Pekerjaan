@@ -1,7 +1,7 @@
 <?php
 session_start();
 if (!isset($_SESSION['user'])) {
-    header("Location: login.php?error=beranda");
+    header("Location: login.html?error=beranda");
     exit;
 }
 ?>
@@ -15,7 +15,7 @@ if (!isset($_SESSION['user'])) {
         <link rel="stylesheet" href="footer.css">
     </head>
     <body>
-        <?php include 'header.php'; ?>
+        <?php include 'header.html'; ?>
         <main class="beranda">
             <!-- Slogan & Ajakan -->
             <div class="utama">
@@ -67,6 +67,6 @@ if (!isset($_SESSION['user'])) {
                 </div>
             </div>
         </main>
-        <?php include 'footer.php'; ?>
+        <?php include 'footer.html'; ?>
     </body>
 </html>
