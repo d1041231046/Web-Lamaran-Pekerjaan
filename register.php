@@ -25,7 +25,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
                 $_SESSION['user'] = $userBaru;
 
-                header("Location: beranda.php");
+                header("Location: index.php");
                 exit();
             } else {
                 $error = "Gagal mendaftarkan akun. Silakan coba lagi.";

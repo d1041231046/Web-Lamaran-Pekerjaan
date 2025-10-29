@@ -17,7 +17,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
         if (password_verify($password, $user['Password'])) {
             $_SESSION['user'] = $user;
-            header("Location: beranda.php");
+            header("Location: index.php");
             exit;
         } else {
             header("Location: login.html?error=Password+Salah");

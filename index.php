@@ -10,7 +10,7 @@ if (!isset($_SESSION['user'])) {
     <head>
         <link rel="icon" href="Logo.png">
         <title>LAPER - Beranda</title>
-        <link rel="stylesheet" href="beranda.css">
+        <link rel="stylesheet" href="index.css">
         <link rel="stylesheet" href="header.css">
         <link rel="stylesheet" href="footer.css">
     </head>
